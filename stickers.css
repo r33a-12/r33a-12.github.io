@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+    margin:50px;
+    font-family: "VT323", serif;
+    font-weight: 250;
+    font-style: normal;
+    color: whitesmoke;
+    text-align: center;
+    font-size: large;
+}
+
+h1{
+    color: whitesmoke;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-self: center;
+}
+
+.tabel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.tabel img {
+    height: 150px;
+    width: auto;
+    object-fit: cover;
+    border-color: whitesmoke;
+    border-style: solid;
+    padding: 10px;
+    display: flex;
+    justify-self: center;
+    transition: height 0.3s, width 0.3s ease;
+}
+
+.tabel figure {
+    transition: color 0.3s ease;
+}
+
+.tabel img:hover {
+    height: 170px;
+    width: auto;
+}
+
+.tabel figure:hover {
+    color: black;
+}

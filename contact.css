@@ -1,0 +1,68 @@
+body {
+    background-color: black;
+    margin: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-image: url('border.jpg'), url('border1.jpg');
+    background-position: left, right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 15%;
+    overflow: hidden;
+}
+
+.contact {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.contact-title {
+    color: whitesmoke;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    display: flex;
+    justify-self: center;
+}
+
+.contact-text p:hover {
+    color: rgb(182, 160, 215);
+    font-size: 40px;
+}
+
+.contact-text {
+    font-family: "VT323", serif;
+    font-weight: 250;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.contact-text p {
+    transition: color 0.3s, font-size 0.3s ease;
+}
+
+.doggo img {
+    width: 200px;
+    position: fixed;
+    animation: image-animation 3s linear;
+    opacity: 0;
+  }
+  
+  @keyframes image-animation {
+    0% {
+      transform: translateX(-50px) rotate(0deg);
+      opacity: 0;
+    }
+    50% {
+      transform: translateX(50vw) rotate(180deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(100vw) rotate(360deg);
+      opacity: 0;
+  }
+}  

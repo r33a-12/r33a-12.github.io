@@ -1,0 +1,535 @@
+body {
+    background-color: black;
+    margin: 50px;
+    margin-top: 0;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-image: url("border.jpg"), url("border1.jpg");
+    background-position: left, right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 15%;
+}
+
+a:link {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:visited {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(102, 99, 102);
+    text-decoration: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ DROPDOWN SECTION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.navi {
+    background-color: #33333391;
+    padding: 10px;
+    top: 0;
+    width: 83%;
+    height: fit-content;
+    display: flex;
+    justify-self: center;
+    z-index: 1;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-self: left;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item>a {
+    color: whitesmoke;
+    justify-self: left;
+    font-family: "Press Start 2P", system-ui;
+    justify-self: left;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.menu-item>a:hover {
+    background-color: #555;
+}
+
+.dropdown {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.dropdown li {
+    width: 100%;
+    font-family: "VT323", serif;
+    font-weight: 250;
+    font-style: normal;
+}
+
+.dropdown li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.dropdown li a:hover {
+    background-color: #666;
+}
+
+.menu-item:hover .dropdown {
+    display: block;
+}
+
+.control {
+    place-self: center;
+    accent-color: rgb(135, 62, 153);
+    margin-top: 5px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TITLE SECTION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    z-index: -1;
+    transform: translateY(20px);
+    border: 10px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+
+@media screen and (max-width: 960px) and (min-width: 500px) {
+    .title-img {
+        width: 350px;
+        height: fit-content;
+        display: flex;
+        z-index: -1;
+    }
+
+    .title {
+        display: flex;
+        justify-content: center;
+        justify-self: center;
+        z-index: -1;
+        transform: translateY(20px);
+        border: 10px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .heart {
+        width: 30px;
+        height: fit-content;
+        display: flex;
+        z-index: -1;
+    }
+
+    .navi {
+        background-color: #33333391;
+        padding: 10px;
+        top: 0;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-self: center;
+        z-index: 1;
+
+    }
+
+    .subtitle {
+        font-size: xx-small;
+    }
+
+    .about {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        z-index: 1;
+    }
+
+    .support img {
+        width: 475px;
+        height: fit-content;
+    }
+
+    .support-text {
+        font-size: medium;
+    }
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: whitesmoke;
+    font-size: small;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+header {
+    display: contents;
+    justify-content: center;
+    overflow: visible;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ABOUT SECTION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.about {
+    justify-content: center;
+    justify-self: center;
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    color: whitesmoke;
+}
+
+.scene1 {
+    width: 350px;
+    height: fit-content;
+    display: flex;
+    justify-self: center;
+}
+
+.about-info {
+    font-family: "VT323", serif;
+    font-weight: 250;
+    font-size: x-large;
+    font-style: normal;
+    align-self: center;
+    justify-self: start;
+    margin-top: 0;
+}
+
+.about-title {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 250;
+    display: flex;
+    font-size: larger;
+    font-style: normal;
+    align-self: baseline;
+    justify-self: start;
+    margin-bottom: 0;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SUPPORT SECTION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.support {
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.support-text {
+    z-index: 2;
+    position: absolute;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 250;
+    font-size: x-large;
+    font-style: normal;
+    color: whitesmoke;
+    text-align: center;
+    text-shadow: 2px 2px rgb(108, 10, 10);
+    top: 200px;
+    left: 110px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CONTENTS SECTION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.contents-info {
+    font-family: "VT323", serif;
+    font-weight: 250;
+    font-size: xx-large;
+    width: 80%;
+    margin-top: 10%;
+    text-align: center;
+    font-style: normal;
+    color: whitesmoke;
+    justify-self: center;
+    position: relative;
+}
+
+th {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 250;
+    margin: 50px;
+    padding: 20px;
+    font-size: xx-large;
+    font-style: normal;
+    align-self: baseline;
+    justify-self: start;
+    background-color: black;
+}
+
+td {
+    font-family: "VT323", serif;
+    font-weight: 250;
+    font-size: xx-large;
+    font-style: normal;
+    padding: 10px;
+    padding-left: 10px;
+    border: 10px;
+    justify-content: center;
+    justify-items: center;
+}
+
+table {
+    width: 25%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    color: whitesmoke;
+    justify-self: center;
+}
+
+tr:nth-child(odd) {
+    background-color: #281830;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CHARACTERS SECTION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.character-border {
+    border: 3px solid whitesmoke;
+    display: table;
+    justify-self: center;
+    margin: 0%;
+    padding: 0%;
+    width: 60%;
+    height: 500px;
+}
+
+.character-photo {
+    justify-self: center;
+    align-self: center;
+    height: 225px;
+    width: fit-content;
+}
+
+.character-name {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 250;
+    font-size: x-large;
+    font-style: normal;
+    position: static;
+    justify-self: center;
+    padding: 2%;
+    border: 6px solid whitesmoke;
+    background-color: black;
+    height: 40%;
+    width: 75%;
+    overflow: auto;
+}
+
+.character-name-text {
+    font-family: "VT323", serif;
+    font-weight: 250;
+    font-size: x-large;
+    font-style: normal;
+    display: inline;
+    justify-self: flex-start;
+    color: rgb(197, 171, 171);
+}
+
+.character-name-text-sans {
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-size: large;
+    font-style: italic;
+    display: inline;
+    justify-self: flex-start;
+    color: rgb(197, 171, 171);
+}
+
+.character-name-text-papyrus {
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight: 700;
+    font-size: 10px;
+    font-style: italic;
+    display: flexbox;
+    justify-self: flex-start;
+    line-height: 30px;
+    word-spacing: 5px;
+    float: inline-start;
+    color: rgb(197, 171, 171);
+}
+
+.stats {
+    justify-self: center;
+    height: 10%;
+    margin: 1%;
+    width: fit-content;
+}
+
+.bottom {
+    width: 100%;
+    height: 50%;
+    align-self: flex-end;
+    background-color: black;
+}
+
+.top {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-self: flex-start;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.frisk {
+    justify-self: center;
+    align-self: center;
+    height: 225px;
+    width: fit-content;
+    transform: translateX(-30px);
+}
+
+.flowey {
+    justify-self: center;
+    align-self: center;
+    height: 225px;
+    width: fit-content;
+    transform: translateX(-30px);
+}
+
+
+.character {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 250;
+    font-size: xx-large;
+    font-style: normal;
+    color: whitesmoke;
+    justify-self: center;
+    margin-top: 100px;
+}
+
+.choices {
+    justify-content: space-evenly;
+    justify-self: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.choices img {
+    margin: 5px;
+}
+
+.character-info {
+    font-family: "VT323", serif;
+    width: 80%;
+    font-weight: 250;
+    font-size: x-large;
+    font-style: normal;
+    color: rgb(197, 171, 171);
+    justify-self: center;
+    margin-top: 10px;
+    text-indent: 75px;
+}
+
+.character-info-title {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 250;
+    font-size: x-large;
+    font-style: normal;
+    color: whitesmoke;
+    width: 80%;
+    justify-self: center;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+.character-gif {
+    justify-self: center;
+    align-self: center;
+    height: 225px;
+    width: fit-content;
+    margin: 2%;
+}
+
+.toriel {
+    justify-self: center;
+    align-self: center;
+    height: 225px;
+    width: fit-content;
+    margin: 2%;
+}
+
+.undyne, .toriel, .papyrus, .alphys, .mettaton, .asriel {
+    justify-self: center;
+    align-self: center;
+    height: 225px;
+    width: fit-content;
+    margin: 2%;
+}
+
+.sans, .asgore {
+    justify-self: center;
+    align-self: center;
+    height: 225px;
+    width: fit-content;
+    transform: translateX(30px);
+}
+
+.chara {
+    justify-self: center;
+    align-self: center;
+    height: 225px;
+    width: fit-content;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ WHATEVER THIS IS SECTION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.weirdo {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 250;
+    font-size: x-large;
+    font-style: normal;
+    color: whitesmoke;
+    font-size: large;
+    margin-top: 500px;
+    text-align: center;
+}
+
+.weirdo p {
+    justify-self: center;
+    display: flex;
+    margin: 500px;
+}
+
+footer {
+    font-family: "VT323", serif;
+    font-weight: 250;
+    font-size: larger;
+    font-style: normal;
+    display: flex;
+    color: whitesmoke;
+    justify-self: center;
+}
