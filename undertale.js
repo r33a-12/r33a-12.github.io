@@ -14,7 +14,7 @@ window.onload = function () {
     message.textContent = "music is paused";
     message.style.fontFamily = sourceStyle.fontFamily;
     message.style.color = sourceStyle.color;
-    message.style.fontSize = sourceStyle.fontSize;
+    message.style.fontSize = "x-large";
     message.style.marginTop = "10px";
     message.style.placeSelf = "center";
     naviElement.insertAdjacentElement("afterend", message);
