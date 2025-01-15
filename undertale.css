@@ -67,6 +67,15 @@ a:hover {
 
 }
 
+#subscribe-popup:hover {
+    background-color: rgb(4, 29, 37);
+    color: rgb(222, 220, 220)
+}
+
+#close-popup:hover {
+    opacity: 0;
+}
+
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ DROPDOWN SECTION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .navi {
