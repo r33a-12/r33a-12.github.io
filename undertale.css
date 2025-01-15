@@ -26,6 +26,47 @@ a:hover {
     text-decoration: none;
 }
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ POP-UP SECTION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#newsletter-popup {
+    display:none;
+    align-content: center; 
+    position:fixed;
+    height: 70%;
+    width: 70%; 
+    top:50%; 
+    left:50%; 
+    transform:translate(-50%, -50%); 
+    padding:20px; 
+    box-shadow:0 4px 6px rgba(0,0,0,0.1); 
+    z-index:1000;
+    color: whitesmoke;
+    font-family: "Press Start 2P", system-ui;
+    text-align: center;
+    border-radius: 5%;
+    background-image: url("newsletter-popup.png");
+    background-size: cover;
+    
+}
+
+#newsletter-popup>p {
+    font-family: "VT323", serif;
+    font-size: x-large;
+}
+
+#newsletter-form {
+    color: whitesmoke;
+    font-family: "Press Start 2P", system-ui;
+}
+
+#subscribe-popup, #close-popup {
+    font-family: "VT323", serif;
+    font-size: xx-large;
+    background-color: rgb(10, 42, 53);
+    color: whitesmoke;
+
+}
+
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ DROPDOWN SECTION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .navi {
