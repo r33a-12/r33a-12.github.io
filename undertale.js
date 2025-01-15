@@ -64,7 +64,6 @@ window.onload = function () {
 
     if (subscribers.includes(emailInput)) {
         document.getElementById('form-message').style.fontFamily = sourceStyle.fontFamily;
-        document.getElementById('form-message').style.fontSize = "x-large";
         document.getElementById('form-message').textContent = 'You are already subscribed!';
         document.getElementById('form-message').style.color = 'rgb(93, 118, 166)';
         document.getElementById('form-message').style.display = 'block';
@@ -75,7 +74,6 @@ window.onload = function () {
     localStorage.setItem('subscribers', JSON.stringify(subscribers));
 
     document.getElementById('form-message').style.fontFamily = sourceStyle.fontFamily;
-    document.getElementById('form-message').style.fontSize = "x-large";
     document.getElementById('form-message').textContent = 'Thank you for subscribing!';
     document.getElementById('form-message').style.color = 'rgb(93, 166, 129)';
     document.getElementById('form-message').style.display = 'block';
